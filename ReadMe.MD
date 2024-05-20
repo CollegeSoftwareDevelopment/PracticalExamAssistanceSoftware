@@ -17,7 +17,7 @@ To get started with PracticalExamAssistanceSoftware, follow these steps:
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/yourusername/PracticalExamAssistanceSoftware.git
+    git clone https://github.com/CollegeSoftwareDevelopment/PracticalExamAssistanceSoftware.git
     ```
 
 2. **Open the Solution in Visual Studio**:

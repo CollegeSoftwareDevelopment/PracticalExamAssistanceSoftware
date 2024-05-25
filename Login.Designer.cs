@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.PEASLogoBox = new System.Windows.Forms.PictureBox();
+            this.loginFormContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.PEASLogoBox)).BeginInit();
+            this.loginFormContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // PEASLogoBox
@@ -42,6 +46,20 @@
             this.PEASLogoBox.TabIndex = 0;
             this.PEASLogoBox.TabStop = false;
             // 
+            // loginFormContextMenu
+            // 
+            this.loginFormContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingsToolStripMenuItem});
+            this.loginFormContextMenu.Name = "loginFormContextMenu";
+            this.loginFormContextMenu.Size = new System.Drawing.Size(181, 48);
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -51,6 +69,7 @@
             this.Name = "Login";
             this.Text = "PEAS - Login";
             ((System.ComponentModel.ISupportInitialize)(this.PEASLogoBox)).EndInit();
+            this.loginFormContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +78,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox PEASLogoBox;
+        private System.Windows.Forms.ContextMenuStrip loginFormContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
     }
 }
 
